@@ -556,11 +556,9 @@ footer{
         
     }
     .logoForcomp{
-        flex: none;
         flex-direction: column;
-        place-items: side;
-        display:flow;
-        place-items: center stretch;
+
+       
     }
     .fourthSection{
         flex-direction: column;

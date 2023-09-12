@@ -513,6 +513,25 @@ footer{
         background-color: white !important;
     }
 
+    .navForm{
+        display: inline !important;
+        
+    }
+
+    .firstGetStartedBtn{
+        display: inline !important;
+        
+    }
+
+    .gStarted_btn1, .searchForm{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .searchForm{
+        padding: 10px;
+    }
+
     .gtp3Img_content h2{
         font-size: 32px;
         width: 100%;

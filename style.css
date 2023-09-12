@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&family=Roboto:wght@300;400;500;700&display=swap');
 
+* {
+    box-sizing: border-box;
+  }
+
 body{
     margin: 0;
     font-family: Roboto !important;
@@ -7,6 +11,9 @@ body{
     background: linear-gradient(145deg, rgba(1,33,68,1) 0%, rgba(4,12,24,1) 98%);
    
    
+}
+.row{
+    margin: 0 !important;
 }
 
 /* Nav Styling */
@@ -87,6 +94,11 @@ li a, .signIN{
     color: #FFF; 
     
 }
+
+
+.peopleGrp{
+    margin-left: 150px;
+}
 /* Section with GPT image styling end */
 
 .logoForcomp{
@@ -102,9 +114,9 @@ li a, .signIN{
 
 /* section with blue bg-color styling */
 .secondSec{
-    background:rgb(236, 238, 240);
-    background: linear-gradient(145deg, rgba(1,33,68,1) 0%, rgba(4,12,24,1) 98%);
-    width: 80%;
+    background: rgb(2, 31, 62);
+    background: linear-gradient(121deg, rgba(11,54,101,1) 0%, rgba(11,54,101,1) 100%, rgb(207, 213, 220) 100%);
+    width: 85%;
     margin: 0 auto;
     margin-top: 40px;
     padding: 50px 0;
@@ -205,7 +217,7 @@ margin-bottom: 30px;
 }
 
 
-.thirdSection_middleSec p{
+.thirdSectionMiddleSec p{
     color: #FFF;
     font-family: Manrope;
     font-size: 24px;
@@ -310,6 +322,7 @@ margin-bottom: 30px;
 }
 
 .firstCard_content{
+    position: relative;
     background: #042C54;
     margin-top: 0;
     width: 70%;
@@ -336,6 +349,7 @@ margin-bottom: 30px;
     padding-top: 20px;
 }
 .secondCard_content1, .secondCard_content2, .thirdCard_content1, .thirdCard_content2{
+    position: relative;
     background: #042C54;
     margin-top: 0;
     width: 100%;
@@ -359,7 +373,15 @@ margin-bottom: 30px;
     margin-left: -180px;
 }
 
-
+.readArticle{
+    margin-left: 10px;
+    color: #FFF;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+   
+}
 /* card section styling ends */
 
 
@@ -466,8 +488,21 @@ footer{
 /* media Quaries */
 
 /* responsiveness for small devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
 
+    * {
+        box-sizing: border-box;
+        
+      }
+
+    .col-sm-12{
+        /* width: 100%; */
+    }
+
+    .peopleGrp{
+        margin-left: 25px;
+    }
+  
     br{
         display: none;
     }
@@ -484,16 +519,65 @@ footer{
 
     .gtp3Img_content p{
         font-size: 15px;
+        text-align: justify;
     }
 
-    .img2{
-        width: 100% !important;
+    .img2 img{
+        width: 100%;
 
+    }
+
+    .featureimg img{
+        width: 100%;
+        padding: 0 20px;
+        
+        
     }
     .logoForcomp{
         flex: none;
         flex-direction: column;
+        place-items: side;
+        display:flow;
+        place-items: center stretch;
     }
+    .fourthSection{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+     
+    .thirdSection_rightSec{
+        color: #81AFDD;
+        font-family: Manrope;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        padding: 10px;
+        text-align: left;
+           
+    }
+
+    .thirdSectionMiddleSec p{
+            line-height: 10px;
+            font-size: 16px;
+            font-weight: normal
+            
+    }
+
+    .featureimg img{
+        width: 100%;
+    }
+
+ .firstCard{
+    margin-bottom: 10px;
+   
+ }
+
+ .secondCard{
+    margin: 0 auto;
+ }
 }
 
 /* responsiveness for medium devices */
